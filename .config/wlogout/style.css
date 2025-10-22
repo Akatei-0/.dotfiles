@@ -1,5 +1,5 @@
 
-@import 'colors.css';
+@import '../shared/colors/colors-gtk.css';
 
 window {
     font-family: CodeNewRoman Nerd Font Propo;
