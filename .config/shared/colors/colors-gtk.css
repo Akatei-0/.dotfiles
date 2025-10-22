@@ -1,0 +1,20 @@
+@define-color foreground rgba(255,255,255,1);
+@define-color background rgba(14,20,27,1);
+@define-color cursor rgba(215,210,208,1);
+
+@define-color color0 rgba(4,13,13,1);
+@define-color color1 rgba(59,110,138,1);
+@define-color color2 rgba(76,120,143,1);
+@define-color color3 rgba(87,141,167,1);
+@define-color color4 rgba(113,170,195,1);
+@define-color color5 rgba(169,163,162,1);
+@define-color color6 rgba(255,255,255,1);
+@define-color color7 rgba(215,210,208,1);
+@define-color color8 rgba(150,147,145,1);
+@define-color color9 rgba(59,110,138,1);
+@define-color color10 rgba(76,120,143,1);
+@define-color color11 rgba(87,141,167,1);
+@define-color color12 rgba(113,170,195,1);
+@define-color color13 rgba(169,163,162,1);
+@define-color color14 rgba(180,179,177,1);
+@define-color color15 rgba(215,210,208,1);
