@@ -1,0 +1,17 @@
+export JAVA_HOME="/usr/lib/jvm/java-25-openjdk"
+export HOME="/home/aka"
+export QT_QPA_PLATFORMTHEME=qt5ct
+export PATH=$JAVA_HOME/bin:$PATH
+export PATH="$HOME/.pyenv/bin:$PATH"
+export XCURSOR_THEME=catpuccin-mocha-dark-cursors
+export TERMINAL=foot
+export BRAVE_USE_WAYLAND=1
+export MOZ_ENABLE_WAYLAND=1
+export QT_QPA_PLATFORM=wayland
+export XDG_SESSION_TYPE=wayland
+export GDK_BACKEND=wayland
+export PATH="$HOME/.local/bin:$PATH"
+export EDITOR=nvim
+export PATH="$HOME/.cargo/bin:$PATH"
+export TERM=xterm-256color
+export COLORTERM=truecolor
