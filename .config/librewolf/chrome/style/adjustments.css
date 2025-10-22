@@ -1,0 +1,66 @@
+
+.titlebar-buttonbox-container {
+  display: none !important;
+}
+#nav-bar {
+  display: flex !important;
+}
+
+/* Move the hamburger menu button to the left */
+#PanelUI-button {
+  order: -1 !important;
+  margin-inline-start: 0 !important;
+  margin-inline-end: 0 !important;
+  padding: 0 !important;
+}
+
+
+
+/* common toolbars / titlebar / navigator toolbox */
+#navigator-toolbox:-moz-window-inactive,
+#TabsToolbar:-moz-window-inactive,
+#toolbar-menubar:-moz-window-inactive,
+#nav-bar:-moz-window-inactive,
+#PersonalToolbar:-moz-window-inactive,
+#titlebar:-moz-window-inactive,
+#navigator-toolbox:-moz-window-inactive * {
+  opacity: 1 !important;
+  color: inherit !important;
+  filter: none !important;
+  -moz-opacity: 1 !important;
+}
+
+/* tabs & tab backgrounds */
+.tabbrowser-tab:-moz-window-inactive,
+.tab-background:-moz-window-inactive,
+.tabbrowser-tab:-moz-window-inactive * {
+  opacity: 1 !important;
+  color: inherit !important;
+  filter: none !important;
+}
+
+/* address / search bar */
+#urlbar:-moz-window-inactive,
+#searchbar:-moz-window-inactive {
+  opacity: 1 !important;
+  color: inherit !important;
+  filter: none !important;
+}
+
+/* menu, popup toolbars */
+#toolbar-menubar:-moz-window-inactive,
+#menubar-items:-moz-window-inactive,
+#browser-menubar:-moz-window-inactive {
+  opacity: 1 !important;
+  color: inherit !important;
+  filter: none !important;
+
+
+/* Replace the hamburger icon with a custom one */
+/* #PanelUI-button .toolbarbutton-icon { */
+/*   list-style-image: url("resources/hamburger2.svg") !important; /* Replace with your icon name */ */
+/*   width: 18px !important; */
+/*   height: 18px !important; */
+/*   -moz-image-region: auto !important; */
+/*   fill: currentColor !important; /* For SVG using currentColor */ */
+/* } */

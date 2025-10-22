@@ -1,0 +1,60 @@
+
+/* icons */
+
+/* #back-button { */
+/*   list-style-image: url("resources/left.svg") !important; */
+/* } */
+/**/
+/* #forward-button { */
+/*   list-style-image: url("resources/right.svg") !important; */
+/* } */
+/**/
+/* #reload-button { */
+/*   list-style-image: url("resources/reload.svg") !important; */
+/* } */
+/**/
+/* #stop-button { */
+/*   list-style-image: url("resources/stop.svg") !important; */
+/* } */
+
+#new-tab-button, #tabs-newtab-button {
+  list-style-image: url("resources/newtab.svg") !important;
+}
+
+/* #unified-extensions-button { */
+/*   list-style-image: url("resources/extension.svg") !important; */
+/* } */
+
+#tracking-protection-icon {
+  list-style-image: url(chrome://browser/skin/tracking-protection.svg);
+}
+
+/* #sidebar-button { */
+/*   list-style-image: url("resources/sidebars.svg") !important; */
+/* } */
+
+#sanitizeEverythingWarningIcon {
+  list-style-image: url("chrome://global/skin/icons/warning.svg") !important;
+  -moz-context-properties: fill;
+  fill: #f9c63b;
+  width: 48px !important;
+  height: 48px !important;
+}
+
+.tab-icon-image[src="chrome://branding/content/icon32.png"],
+.tab-icon-image[src="chrome://browser/skin/privatebrowsing/favicon.svg"] {
+  content: url("chrome://devtools/skin/images/browsers/firefox.svg");
+}
+
+#identity-box[pageproxystate="valid"].chromeUI #identity-icon {
+  list-style-image: url("chrome://devtools/skin/images/browsers/firefox.svg") !important;
+}
+
+.textbox-search-sign {
+  display: inherit !important;
+  width: 16px !important;
+  height: 16px !important;
+  opacity: .8 !important;
+  -moz-context-properties: fill;
+  fill: currentColor;
+}

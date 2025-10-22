@@ -1,0 +1,21 @@
+:root {
+    --foreground: rgba(255,255,255,1);
+    --background: rgba(14,20,27,1);
+    --cursor: rgba(215,210,208,1);
+    --color0: rgba(4,13,13,1);
+    --color1: rgba(59,110,138,1);
+    --color2: rgba(76,120,143,1);
+    --color3: rgba(87,141,167,1);
+    --color4: rgba(113,170,195,1);
+    --color5: rgba(169,163,162,1);
+    --color6: rgba(255,255,255,1);
+    --color7: rgba(215,210,208,1);
+    --color8: rgba(150,147,145,1);
+    --color9: rgba(59,110,138,1);
+    --color10: rgba(76,120,143,1);
+    --color11: rgba(87,141,167,1);
+    --color12: rgba(113,170,195,1);
+    --color13: rgba(169,163,162,1);
+    --color14: rgba(180,179,177,1);
+    --color15: rgba(215,210,208,1);
+}

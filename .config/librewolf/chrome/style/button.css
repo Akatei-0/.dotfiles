@@ -1,0 +1,189 @@
+
+
+/* button */
+
+.toggle-button { --toggle-dot-background-color-on-pressed: #fff !important; }
+#blocked-permissions-container, #picture-in-picture-button,
+#urlbar-go-button, .private-browsing-indicator-with-label,
+#reset-pbm-toolbar-button, #nav-bar toolbarspring,
+#firefox-view-button, #fxa-toolbar-menu-button,
+#userContext-icons, #userContext-label,
+#scrollbutton-up, #scrollbutton-down,
+.sharing-icon, #save-to-pocket-button {
+  display: none !important;
+}
+
+.tab-close-button, .tab-icon-overlay, .tab-icon-image, span[part="button"],
+.toolbarbutton-1, #identity-permission-box,
+#notification-popup-box, #star-button,
+#translations-button-circle-arrows,
+#reader-mode-button > .urlbar-icon,
+#translations-button > #translations-button-icon,
+#shopping-sidebar-button > .urlbar-icon , #identity-box,
+#tracking-protection-icon-container {
+  fill: light-dark(#525252, #c9c9cb) !important;
+  fill-opacity: 1 !important;
+}
+
+.tab-close-button:active, .tab-icon-overlay:active, span[part="button"]:active,
+.toolbarbutton-1:active, #identity-permission-box:active,
+#notification-popup-box:active, #star-button:active,
+#translations-button-circle-arrows:active,
+#reader-mode-button:active > .urlbar-icon,
+#translations-button:active > #translations-button-icon,
+#shopping-sidebar-button:active > .urlbar-icon , #identity-box:active,
+#tracking-protection-icon-container:active {
+  fill: light-dark(#2d2d2d, #ececec) !important;
+}
+
+#viewButton {
+  border: none !important;
+  background: none !important;
+  border-radius: 4px !important;
+}
+
+#viewButton:hover {
+  background-color: var(--button-hover-bgcolor) !important;
+}
+
+#viewButton[open] {
+  background-color: var(--button-active-bgcolor) !important;
+}
+
+#downloads-indicator-progress-outer {
+  border: 1.5px solid light-dark(#525252, #c9c9cb) !important;
+  width: 17px !important;
+  height: 17px !important;
+}
+
+.webextension-browser-action {
+  border-radius: 6px !important;
+  margin-bottom: 9px !important;
+  width: 30px !important;
+}
+
+#nav-bar .toolbarbutton-1 {
+  max-height: 30px !important;
+  margin-top: 1px !important;
+}
+
+#nav-bar .toolbarbutton-1 > .toolbarbutton-icon {
+  height: 30px !important;
+  width: 30px !important;
+  padding: 6px !important;
+  border-radius: 6px !important;
+}
+
+#TabsToolbar .toolbarbutton-1 {
+  max-height: 30px !important;
+  margin: unset !important;
+  margin-top: 4px !important;
+  margin-bottom: 3px !important;
+}
+
+#TabsToolbar .toolbarbutton-1 > .toolbarbutton-icon {
+  height: 30px !important;
+  width: 30px !important;
+  padding: 6px !important;
+  border-radius: 6px !important;
+}
+
+#TabsToolbar #downloads-button > .toolbarbutton-badge-stack {
+  height: 30px !important;
+  width: 30px !important;
+  border-radius: 6px !important;
+  padding: 6.5px 5.5px 5.5px 6.5px !important;
+}
+
+#PanelUI-menu-button > .toolbarbutton-badge-stack {
+  height: 30px !important;
+  width: 30px !important;
+  border-radius: 6px !important;
+  padding: 6px 5.5px 0 !important;
+}
+
+#PanelUI-menu-button .toolbarbutton-icon {
+  height: 19px !important;
+  width: 19px !important;
+}
+
+#nav-bar {
+#downloads-button > .toolbarbutton-badge-stack {
+  height: 30px !important;
+  width: 30px !important;
+  border-radius: 6px !important;
+  padding: 6.5px 5.5px 5.5px 6.5px !important;
+}
+}
+
+#page-action-buttons {
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#identity-box {
+  height: 28px !important;
+  border-radius: 6px !important;
+}
+
+#identity-box:hover {
+  background: rgba(70, 70, 70, .1) !important;
+}
+
+.identity-box-button {
+  background: none !important;
+}
+
+#notification-popup-box {
+  margin-top: 0 !important;
+  background: none !important;
+}
+
+#tracking-protection-icon-container {
+  height: 28px !important;
+  border-radius: 6px !important;
+}
+
+#star-button[starred], #translations-button-circle-arrows,
+#reader-mode-button[readeractive] > .urlbar-icon,
+#translations-button[translationsactive] > #translations-button-icon,
+#shopping-sidebar-button[shoppingsidebaropen] > .urlbar-icon {
+  fill: light-dark(#525252, #c9c9cb) !important;
+}
+
+:has(#star-button-box[open]) {
+#star-button[starred] {
+  animation-name: urlbar-zoom-reset-pulse;
+  animation-duration: 250ms;
+}
+}
+
+#appMenu-fullscreen-button2 .toolbarbutton-icon {
+  background: none !important;
+}
+
+#appMenu-fullscreen-button2:hover {
+  background: var(--button-hover-bgcolor) !important;
+}
+
+#appMenu-fullscreen-button2:active {
+  background: var(--button-active-bgcolor) !important;
+}
+
+#appMenu-zoom-controls {
+  border-top: 1px solid var(--bg3) !important;
+}
+
+.checkbox-check:not([native]) {
+  appearance: none !important;
+  background-color: transparent !important;
+  border-radius: 2px !important;
+  border: 2px solid rgba(165, 165, 165, .8) !important;
+  &[checked] {
+  background-color: light-dark(#4481f2, #1280fd) !important;
+  background-image: url("resources/check.svg") !important;
+  border: none !important;
+  &:hover:active { background-color: light-dark(#0a4eb8, #417bde) !important; }
+}
+}
+

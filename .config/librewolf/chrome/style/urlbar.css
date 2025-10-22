@@ -1,0 +1,322 @@
+
+
+/* urlbar */
+
+#urlbar {
+  --urlbar-box-bgcolor: var(--button-hover-bgcolor) !important;
+  top: 10px !important;
+  margin-top: 0 !important;
+  transition: margin-top .25s !important;
+}
+
+#urlbar-container {
+  -moz-window-dragging: drag;
+}
+
+#urlbar-search-mode-indicator {
+  margin-top: 3px !important;
+  height: 22px !important;
+}
+
+#urlbar-searchmode-switcher {
+  background-color: transparent !important;
+}
+
+#searchmode-switcher-dropmarker,
+#searchmode-switcher-close,
+#searchmode-switcher-title {
+  display: none !important;
+}
+
+#urlbar-background {
+  height: 30px !important;
+  border: none !important;
+  border-radius: 6px !important;
+  background: var(--button-hover-bgcolor) !important;
+  transition: background .5s !important;
+}
+
+#urlbar:hover #urlbar-background {
+  background: var(--button-active-bgcolor) !important;
+  box-shadow: none !important;
+  transition: background .5s !important;
+}
+
+#urlbar[open] #urlbar-background {
+  transition: none !important;
+}
+
+.urlbar-input-container {
+  padding: 0 !important;
+  height: 30px !important;
+  border-radius: 6px !important;
+}
+
+#urlbar-input::placeholder,
+.searchbar-textbox::placeholder {
+  font-size: 12.5px !important;
+  text-align: left !important;
+}
+
+#urlbar-input {
+  text-align: center !important;
+  margin-bottom: 1px !important;
+}
+
+.urlbar-input-container[pageproxystate=invalid] .urlbar-input {
+  mask-image: linear-gradient(to left, transparent, #fff 10ch);
+}
+
+#urlbar[focused] > .urlbar-input-container {
+  outline: none !important;
+}
+
+#urlbar > #urlbar-background {
+  outline-style: solid !important;
+  outline-color: transparent !important;
+  outline-width: 18px !important;
+}
+
+#urlbar[focused]:not([suppress-focus-border]) > #urlbar-background {
+  outline-color: var(--outline-color) !important;
+  outline-width: 3px !important;
+  outline-offset: -1px !important;
+  transition: all .3s cubic-bezier(.8, 0, 0, .8) !important;
+}
+
+#urlbar:not([breakout][breakout-extend]) {
+  transform: none !important;
+}
+
+#urlbar:not([breakout][breakout-extend]) #identity-icon-label {
+  display: none !important;
+}
+
+#urlbar[breakout][breakout-extend] {
+  position: fixed !important;
+  top: 20vh !important;
+  left: 18vw !important;
+  width: 65vw !important;
+  max-width: unset !important;
+  animation-name: panel-grow;
+  animation-duration: 250ms;
+  margin-top: 25px !important;
+  transition: none !important;
+
+#urlbar-input,
+#urlbar-input::placeholder {
+  font-size: 21px !important;
+}
+
+/* .urlbar-input-container { */
+/*   height: 50px !important; */
+/*   padding-inline-start: 15px !important; */
+/*   padding-inline-end: 15px !important; */
+/* & > :is(box, image) { */
+/*   margin-top: 10px !important; */
+/* } */
+}
+
+.urlbarView-row-inner {
+  flex-wrap: nowrap !important;
+}
+  
+.urlbarView-no-wrap {
+  max-width: 50% !important;
+  flex-basis: 0 !important;
+}
+
+.urlbarView-row[has-url] .urlbarView-url {
+  margin-left: 0 !important;
+}
+
+.urlbarView-row[has-url] .urlbarView-title-separator {
+  display: block !important;
+}
+
+#urlbar-search-mode-indicator {
+  margin-top: 13px !important;
+}
+}
+
+#urlbar[breakout][breakout-extend] #urlbar-background {
+  background-color: var(--bg4) !important;
+  backdrop-filter: blur(30px) !important;
+  box-shadow: var(--bs1) !important;
+}
+
+:has(#urlbar[breakout][breakout-extend]) {
+#urlbar-background {
+  height: unset !important;
+}
+}
+/* important */
+:has(#urlbar[usertyping]:not([persistsearchterms])) {
+#urlbar {
+  position: fixed !important;
+  top: 19vh !important;
+  left: 29vw !important;
+  width: 45vw !important;
+  max-width: unset !important;
+  margin-top: 25px !important;
+}
+
+#urlbar-background {
+  background-color: var(--bg4) !important;
+  backdrop-filter: blur(30px) !important;
+  box-shadow: var(--bs1) !important;
+  height: 50px !important;
+}
+
+.urlbar-input-container {
+  height: 50px !important;
+& > :is(box, image) {
+  margin-top: 10px !important;
+}
+}
+
+#urlbar-input {
+  font-size: 21px !important;
+}
+
+#urlbar[focused] #urlbar-background {
+  box-shadow: var(--bs1) !important;
+}
+
+.urlbar-revert-button {
+  margin-top: 10px !important;
+  margin-right: 5px !important;
+}
+
+#urlbar-search-mode-indicator {
+  margin-top: 13px !important;
+}
+
+#tabbrowser-tabs[orient="horizontal"] {
+  margin-top: 0 !important;
+}
+}
+
+.urlbarView-body-outer {
+  padding: 0 8px !important;
+}
+
+.urlbarView-body-inner {
+  border: 0 !important;
+  border-top: 1px solid rgba(105, 105, 105, .2) !important;
+}
+
+.search-one-offs {
+  background: transparent !important;
+  border: none !important;
+  padding: 8px !important;
+}
+
+.urlbar-page-action {
+  height: 28px !important;
+  border-radius: 6px !important;
+  padding: 6px !important;
+  -moz-window-dragging: no-drag;
+}
+
+.urlbar-page-action:not(#star-button-box) {
+  margin-inline-end: calc(-16px - 2 * var(--urlbar-icon-padding));
+  opacity: 0;
+  transition: .2s;
+}
+
+#urlbar[open] .urlbar-page-action,
+#urlbar:hover .urlbar-page-action,
+.urlbar-page-action[open] {
+  opacity: 1;
+  margin-inline-end: 0 !important;
+}
+
+:has(#page-action-buttons > *[open]) {
+.urlbar-page-action {
+  opacity: 1;
+  margin-inline-end: 0 !important;
+}
+}
+
+:has(#identity-permission-box > *[open]) {
+#identity-permission-box {
+  opacity: 1;
+  margin-inline-start: 0 !important;
+}
+}
+
+#identity-permission-box, #notification-popup-box, #tracking-protection-icon-container {
+  margin-inline-start: calc(-16px - 2 * var(--urlbar-icon-padding));
+  opacity: 0;
+  transition: .2s;
+}
+
+#urlbar[open] #tracking-protection-icon-container,
+#urlbar:hover #tracking-protection-icon-container,
+#tracking-protection-icon-container[open] {
+  opacity: 1;
+  margin-inline-start: 0 !important;
+}
+
+#urlbar[open] #identity-permission-box,
+#urlbar[open] #notification-popup-box,
+#urlbar:hover #identity-permission-box,
+#urlbar:hover #notification-popup-box,
+#identity-permission-box[open],
+#notification-popup-box[open] {
+  opacity: 1;
+  margin-inline-start: 0 !important;
+}
+
+.urlbar-page-action:active,
+#identity-permission-box:active,
+#notification-popup-box:active,
+#tracking-protection-icon-container:active {
+  opacity: unset;
+}
+
+#urlbar:-moz-window-inactive .urlbar-page-action:not(#star-button-box),
+#urlbar:-moz-window-inactive #identity-permission-box,
+#urlbar:-moz-window-inactive #notification-popup-box {
+  opacity: 0 !important;
+}
+
+#urlbar:-moz-window-inactive:hover .urlbar-page-action:not(#star-button-box),
+#urlbar:-moz-window-inactive:hover #identity-permission-box,
+#urlbar:-moz-window-inactive:hover #notification-popup-box {
+  opacity: unset !important;
+}
+
+#urlbar-zoom-button {
+  background: var(--button-hover-bgcolor) !important;
+}
+
+#urlbar:-moz-window-inactive {
+  * { opacity: 78%; }
+}
+
+#urlbar[focused] > #urlbar-background,
+#searchbar:focus-within {
+  box-shadow: none !important;
+}
+
+.urlbarView-row:is([type=bookmark], [pinned]) > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-type-icon {
+  display: none !important;
+}
+
+#searchbar {
+  min-height: 28px !important;
+  background: var(--button-hover-bgcolor) !important;
+  border-radius: 6px !important;
+  border: none !important;
+}
+
+.search-go-button, .search-panel-header, .searchbar-separator {
+  display: none !important;
+}
+
+#PopupSearchAutoComplete {
+  --panel-background: var(--bg2) !important;
+  --panel-border-color: transparent !important;
+}

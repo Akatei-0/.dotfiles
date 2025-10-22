@@ -1,0 +1,193 @@
+
+  
+/* popup */
+
+menupopup, panel[type="arrow"] {
+  appearance: menupopup !important;
+  --panel-border-radius: 6px !important;
+  --panel-padding: 6px !important;
+  --panel-separator-color: var(--bg3) !important;
+  --arrowpanel-background: var(--bg2) !important;
+  --arrowpanel-border-color: transparent !important;
+  --arrowpanel-color: light-dark(#000, #fff) !important;
+}
+
+panel[type="arrow"] {
+  --panel-background: light-dark(rgba(255, 255, 255, .55), rgba(15, 15, 12, .55)) !important;
+  --arrowpanel-background: transparent !important;
+  --arrowpanel-border-radius: 0 !important;
+}
+
+@keyframes panel-grow {
+  0% {
+    transform: scaleX(.96) scaleY(.95);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+@keyframes slide-in {
+  0%, 30% {
+    translate: 100%;
+    opacity: 0;
+  }
+  100% {
+    translate: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+  100% {
+    translate: 100%;
+    opacity: 0;
+  }
+  0% {
+    translate: 0;
+    opacity: 1;
+  }
+}
+
+panelmultiview, popupnotification {
+  animation-name: panel-grow;
+  animation-duration: 250ms;
+}
+
+.panel-arrowcontent {
+  border: none !important;
+}
+
+.panel-arrow {
+  stroke: transparent !important;
+}
+
+.proton-zap {
+  border-image: none !important;
+}
+
+#toolbar-context-toggle-vertical-tabs + menuseparator,
+.panel-footer toolbarseparator, .panel-header + toolbarseparator,
+#identity-popup-mainView-panel-header + toolbarseparator,
+#permission-popup-mainView-panel-header + toolbarseparator,
+#protections-popup-mainView-panel-header-section + toolbarseparator {
+  display: none !important;
+}
+
+menupopup,
+.popup-internal-box,
+#PopupAutoComplete > .autocomplete-richlistbox,
+.menupopup-arrowscrollbox {
+  background: light-dark(rgba(255, 255, 255, .55), rgba(15, 15, 12, .55)) !important;
+}
+
+#tabContextMenu .menu-icon,
+#contentAreaContextMenu .menu-icon {
+  display: none;
+}
+
+menuitem, menu {
+  appearance: none !important;
+  border-radius: 4px !important;
+  height: 22px !important;
+}
+
+menu {
+  margin: 2px 0 !important;
+}
+
+menupopup > menuitem[selected] {
+  background: none !important;
+  color: inherit !important;
+}
+
+menupopup .bookmark-item {
+  margin: 2px 0 !important;
+  height: 22px !important;
+}
+
+menupopup menu:hover:not([disabled=true]),
+menupopup menuitem:hover:not([disabled=true]),
+menupopup menu[_moz-menuactive]:not([disabled=true]),
+menupopup menuitem[_moz-menuactive]:not([disabled=true]),
+.protections-popup-footer-button:not([disabled=true]):hover,
+#protections-popup-show-report-stack:hover .protections-popup-footer-button,
+.protections-popup-category:not([disabled=true]):hover,
+.identity-popup-content-blocking-category:not([disabled=true]):hover,
+#PlacesToolbar .bookmark-item:is(:hover, [open], [_moz-menuactive]),
+#downloadsPanel-mainView .download-state:hover {
+  background: var(--button-hover-bgcolor) !important;
+  color: inherit !important;
+}
+
+toolbarseparator, menuseparator::before {
+  border-top: 1px solid var(--bg3) !important;
+}
+
+menupopup menuseparator {
+  border: none !important;
+  margin: 0 !important;
+}
+
+toolbarseparator[orient="vertical"] {
+  margin: 0 4px !important;
+}
+
+.dialogBox {
+  margin-top: 80px !important;
+  backdrop-filter: blur(30px) !important;
+  box-shadow: var(--bs1) !important;
+  animation-name: panel-grow;
+  animation-duration: 250ms;
+}
+
+#window-modal-dialog::backdrop {
+  background: none !important;
+}
+
+window[role="dialog"] {
+  background-color: var(--bg4) !important;
+}
+
+#editBookmarkPanelContent > input,
+#editBookmarkPanelContent > hbox > input {
+  appearance: none !important;
+  background-color: var(--button-hover-bgcolor) !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 12px !important;
+  height: 20px !important;
+  border-radius: 2px !important;
+  margin-top: 2px !important;
+  margin-bottom: 2px !important; 
+}
+
+#unified-extensions-view .panel-header,
+#unified-extensions-view .panel-header + toolbarseparator,
+#unified-extensions-view .unified-extensions-item-menu-button.subviewbutton {
+  display:none !important;
+}
+
+#unified-extensions-view {
+  --uei-icon-size: 16px !important;
+  width: 22em !important;
+}
+
+@media -moz-pref("widget.macos.native-context-menus") {
+panel[type="arrow"] {
+  --panel-background: transparent !important;
+}
+
+menupopup,
+.popup-internal-box,
+#PopupAutoComplete > .autocomplete-richlistbox,
+.menupopup-arrowscrollbox {
+  background: transparent !important;
+}
+
+:root:not([chromehidden~="toolbar"]):has(#sidebar-main[hidden]) #sidebar-main,
+window[role="dialog"], #PersonalToolbar, .findbar-container, #statuspanel-label,
+#urlbar:is([breakout][breakout-extend], [usertyping]) #urlbar-background {
+  background-color: light-dark(rgba(255, 255, 255, .55), rgba(25, 25, 25, .65)) !important;
+}
+}
