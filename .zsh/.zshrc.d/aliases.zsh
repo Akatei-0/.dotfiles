@@ -1,4 +1,7 @@
 alias vim='nvim'
+alias cd..='cd ..'
+alias add='git add .'
+alias commit='git commit -m'
 # alias cd='z' 
 alias cat='bat --paging=never'
 alias xclip='xclip -selection primary'
